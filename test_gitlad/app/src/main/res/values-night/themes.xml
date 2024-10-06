@@ -1,0 +1,16 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Test_gitlad" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your dark theme here. -->
+        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/nightColorPrimary</item>
+        <item name="colorPrimaryVariant">@color/nightColorPrimaryDark</item>
+        <item name="colorOnPrimary">@color/nightColorOnPrimary</item>
+        <item name="colorSecondary">@color/nightColorSecondary</item>
+        <item name="colorSecondaryVariant">@color/nightColorSecondaryVariant</item>
+        <item name="colorOnSecondary">@color/nightColorOnSecondary</item>
+        <item name="android:colorBackground">@color/nightColorBackground</item>
+        <item name="android:textColor">@color/nightColorText</item>
+    </style>
+</resources>

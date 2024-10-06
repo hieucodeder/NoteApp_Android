@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">App Notes</string>
+
+    <string name="editTextText">Enter text</string>
+
+    <string name="add_note">Add Note</string>
+    <string name="edit_note">Edit Note</string>
+    <string name="image_count">%1$d / %2$d</string>
+
+    <string name="cancel">Cancel</string> <!-- Đây là tài nguyên cho nút hủy -->
+    <string name="select">Select</string> <!-- Đây là tài nguyên cho nút chọn -->
+
+
+</resources>

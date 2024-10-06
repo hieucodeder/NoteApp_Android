@@ -1,0 +1,131 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainDraw"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".View.DrawingActivity">
+
+    <ImageView
+        android:id="@+id/img_Back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_arrow_back_24" />
+    <!-- Drawing View -->
+    <com.example.test_gitlad.View.DrawingView
+        android:id="@+id/drawingView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@android:color/white" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Brush Size:" />
+
+        <SeekBar
+            android:id="@+id/seekBarBrushSize"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_weight="1"
+            android:max="100" />
+
+        <TextView
+            android:id="@+id/tvBrushSize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="50" />
+
+        <View
+            android:id="@+id/viewBrushColor"
+            android:layout_width="0dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="8dp"
+            android:layout_weight="1"
+            android:background="#000000" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btnfreely"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/sharp_floor_24"
+            android:text="Freely" />
+
+        <ImageButton
+            android:id="@+id/btnstraightBrush"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:src="@drawable/baseline_straight_24"
+            android:text="Straight" />
+
+        <ImageButton
+            android:id="@+id/btnRoundBrush"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:src="@drawable/rounded_brightness_1_24"
+            android:text="Round" />
+
+        <ImageButton
+            android:id="@+id/btnSquareBrush"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:src="@drawable/baseline_crop_square_24"
+            android:text="Square" />
+
+    </LinearLayout>
+
+    <!-- Controls -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btnClear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_undo_24"
+            android:text="Clear" />
+
+        <ImageButton
+            android:id="@+id/btnSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:src="@drawable/baseline_save_24"
+            android:text="Save" />
+
+        <ImageButton
+            android:id="@+id/btnDone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:src="@drawable/baseline_done_24"
+            android:text="Done" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_one_column"
+        android:title="Xem danh sách"
+        android:icon="@drawable/ic_view_list" />
+    <item
+        android:id="@+id/action_two_columns"
+        android:title="Chế độ hiển thị theo ô"
+        android:icon="@drawable/ic_view_grid" />
+</menu>

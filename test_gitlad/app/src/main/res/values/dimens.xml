@@ -1,0 +1,6 @@
+<resources>
+    <!-- Kích thước khi CalendarView bị thu nhỏ -->
+    <dimen name="calendar_view_collapsed_height">50dp</dimen>
+    <!-- Kích thước khi CalendarView không bị thu nhỏ -->
+    <dimen name="calendar_view_expanded_height">200dp</dimen>
+</resources>

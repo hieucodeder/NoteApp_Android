@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tvCreatedTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thời gian tạo:"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvLastModifiedTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sửa đổi lần cuối:"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/tvWordCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Số từ:"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/tvCharacterCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Số ký tự:"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp"/>
+
+</LinearLayout>

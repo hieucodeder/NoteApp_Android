@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <item
+        android:id="@+id/action_read_mode"
+        android:icon="@drawable/baseline_remove_red_eye_24"
+        android:title="Chế độ đọc" />
+
+    <item
+        android:id="@+id/action_set_reminder"
+        android:icon="@drawable/baseline_access_time_filled_24"
+        android:title="Nhắc nhở" />
+    <item
+        android:id="@+id/action_PDF"
+        android:icon="@drawable/baseline_push_pin_24"
+        android:title="Xuất sang PDF" />
+    <item
+        android:id="@+id/action_pin_note"
+        android:icon="@drawable/baseline_push_pin_24"
+        android:title="Gim" />
+
+    <item
+        android:id="@+id/action_view_details"
+        android:icon="@drawable/baseline_report_gmailerrorred_24"
+        android:title="Xem chi tiết" />
+</menu>

@@ -1,0 +1,232 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_update"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".View.UpdateActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarmenu"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@android:color/white"
+        android:popupTheme="@style/ToolbarWhiteWithBlackIcons"
+        android:theme="@style/ToolbarWhiteWithBlackIcons"
+        app:menu="@menu/toolbar_menu">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/img_Back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:src="@drawable/baseline_arrow_back_24" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/undoStack"
+                    style="@style/myUndo"
+                    android:src="@drawable/baseline_undo_24" />
+
+                <ImageButton
+                    android:id="@+id/redoStack"
+                    style="@style/myRedo"
+                    android:layout_marginStart="30dp"
+                    android:src="@drawable/baseline_redo_24" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/img_addAnh"
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/icon" />
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/edt_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_background"
+            android:cursorVisible="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:hint="Date"
+            android:inputType="none"
+            android:padding="10dp"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/colorSpinner"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginHorizontal="5dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/edittext_background"
+            android:padding="2dp"
+            android:spinnerMode="dropdown" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <EditText
+            android:id="@+id/edtup_addtieude"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_background"
+            android:fontFamily="@font/ramabhadra"
+            android:hint="The beginning of time"
+            android:maxLines="2"
+            android:padding="10dp"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edtup_addnoidung"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_background"
+            android:fontFamily="@font/ramabhadra"
+            android:hint="This is where your note will be. It’ll be housed here. You’ll save your note here. Type your memories here. Write down your thoughts."
+            android:maxLines="5"
+            android:padding="10dp"
+            android:textSize="15dp" />
+
+
+    </LinearLayout>
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/tollbar_text"
+        android:background="@drawable/edittext_background"
+        android:visibility="gone" />
+
+    <View
+        android:id="@+id/colorView_update"
+        android:layout_width="6dp"
+        android:layout_height="4dp"
+        android:background="@color/black"
+        android:visibility="gone" />
+
+    <FrameLayout
+        android:id="@+id/famnelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_corners1"
+        android:gravity="center"
+        android:padding="10dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_imagesDetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="horizontal"
+            app:layoutManager="androidx.recyclerview.widget.StaggeredGridLayoutManager"
+            app:spanCount="2" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/famnelayoutdrawing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_corners1"
+        android:gravity="center"
+        android:padding="10dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_drawingDetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="horizontal" />
+    </FrameLayout>
+
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="8dp"
+        android:scaleType="centerCrop"
+        android:visibility="gone"
+        app:shapeAppearanceOverlay="@style/RoundedImage" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="0.1" />
+
+    <TimePicker
+        android:id="@+id/timePicker_update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:timePickerMode="spinner"
+        android:visibility="gone" />
+
+
+    <!-- Placeholder View -->
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginBottom="16dp"
+        android:orientation="horizontal">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/sw_sang_toi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="250dp"
+            android:layout_marginEnd="16dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/moon"
+            app:backgroundTint="@android:color/background_light"
+            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.Round" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/imgupSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="false"
+            android:layout_alignParentTop="false"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/save"
+            app:backgroundTint="@android:color/background_light"
+            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.Round" />
+
+    </LinearLayout>
+</LinearLayout>

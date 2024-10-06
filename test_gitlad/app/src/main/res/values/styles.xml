@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Base.Theme.Test_gitlad." parent="Theme.AppCompat.Light.DarkActionBar">
+    </style>
+    <style name="RoundedImage">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">16dp</item>
+    </style>
+
+    <style name="ShapeAppearanceOverlay.App.Round" parent="">
+        <item name="cornerSize">50dp</item>
+    </style>
+
+    <style name="mybold">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">?attr/selectableItemBackgroundBorderless</item>
+        <item name="android:padding">8dp</item>
+    </style>
+
+    <style name="myItalic">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">?attr/selectableItemBackgroundBorderless</item>
+        <item name="android:padding">8dp</item>
+    </style>
+
+    <style name="myUndrtline">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">?attr/selectableItemBackgroundBorderless</item>
+        <item name="android:padding">8dp</item>
+    </style>
+
+    <style name="myBackgroundcolor">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">?attr/selectableItemBackgroundBorderless</item>
+        <item name="android:padding">8dp</item>
+    </style>
+    <style name="myUndo">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">?attr/selectableItemBackgroundBorderless</item>
+        <item name="android:padding">8dp</item>
+    </style>
+    <style name="myRedo">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">?attr/selectableItemBackgroundBorderless</item>
+        <item name="android:padding">8dp</item>
+    </style>
+    <style name="mySetRemider">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">?attr/selectableItemBackgroundBorderless</item>
+        <item name="android:padding">8dp</item>
+    </style>
+    <style name="myMic">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">?attr/selectableItemBackgroundBorderless</item>
+        <item name="android:padding">8dp</item>
+    </style>
+    <style name="myDraw">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">?attr/selectableItemBackgroundBorderless</item>
+        <item name="android:padding">8dp</item>
+    </style>
+    <style name="myBullet">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">?attr/selectableItemBackgroundBorderless</item>
+        <item name="android:padding">8dp</item>
+    </style>
+    <style name="myGroup">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">?attr/selectableItemBackgroundBorderless</item>
+        <item name="android:padding">8dp</item>
+    </style>
+    <style name="ToolbarWhiteWithBlackIcons" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:textColorPrimary">@android:color/black</item> <!-- Màu văn bản của tiêu đề -->
+        <item name="android:textColorSecondary">@android:color/black</item> <!-- Màu của các biểu tượng -->
+        <item name="actionMenuTextColor">@android:color/black</item> <!-- Màu văn bản trong menu -->
+        <item name="android:textColorHint">@android:color/black</item> <!-- Màu gợi ý -->
+    </style>
+</resources>

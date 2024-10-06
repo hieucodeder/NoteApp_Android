@@ -1,0 +1,69 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/edittext_background"
+    android:orientation="vertical"
+    android:padding="8dp"
+    tools:context=".View.UpdateActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btnToggleGroup"
+            style="@style/myGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_text_fields_24" />
+
+        <ImageButton
+            android:id="@+id/btnMic"
+            style="@style/myMic"
+            android:src="@drawable/baseline_mic_24" />
+
+        <ImageButton
+            android:id="@+id/btnDrawing"
+            style="@style/myDraw"
+            android:src="@drawable/baseline_draw_24" />
+        <!-- Nút gạch đầu dòng -->
+        <ImageButton
+            android:id="@+id/btnBullet"
+            style="@style/myBullet"
+            android:src="@drawable/baseline_format_list_bulleted_24" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/formattingGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_background"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:visibility="gone">
+
+        <ImageButton
+            android:id="@+id/btnBold"
+            style="@style/mybold"
+            android:src="@drawable/baseline_format_bold_24" />
+
+        <ImageButton
+            android:id="@+id/btnItalic"
+            style="@style/myItalic"
+            android:src="@drawable/baseline_format_italic_24" />
+
+        <ImageButton
+            android:id="@+id/btnUnderline"
+            style="@style/myUndrtline"
+            android:src="@drawable/baseline_format_underlined_24" />
+
+        <ImageButton
+            android:id="@+id/btnBackgroundColor"
+            style="@style/myBackgroundcolor"
+            android:src="@drawable/baseline_format_color_text_24" />
+
+    </LinearLayout>
+
+</LinearLayout>
